@@ -1,0 +1,24 @@
+{
+  "name": "Anime-Scraper-Bot",
+  "version": "1.0.0",
+  "description": "Anime Scraper Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saikomantisu/Anime-Scraper-Bot.git"
+  },
+  "keywords": [],
+  "author": "Psychomantis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saikomantisu/Anime-Scraper-Bot/issues"
+  },
+  "homepage": "https://github.com/Saikomantisu/Anime-Scraper-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "request": "^2.88.2"
+  }
+}
