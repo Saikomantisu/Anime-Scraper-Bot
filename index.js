@@ -34,23 +34,6 @@ client.on('message', message => {
     })
   })
 
-  command_handler(message, 'blowjob', msg => {
-    request('https://api.waifu.pics/nsfw/blowjob', async (error, response, body) => {
-      const pics = JSON.parse(body)
-      
-      const embed = new DJS.MessageEmbed()
-        .setImage(pics.url)
-        .setColor(embed_color)
-
-      const emojies = ['💗', '💓', '💖']
-      const random = Math.floor(Math.random() * emojies.length)
-
-      const sended_embed = await msg.channel.send(embed)
-      sended_embed.react(emojies[random])
-      return
-    })
-  })
-
   command_handler(message, 'anime', (msg, args) => {
     const text = args.join(' ')
 
